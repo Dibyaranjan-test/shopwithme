@@ -1,11 +1,20 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import logo from "../images/shopmelogo.png";
 import "./Login.css";
+import {
+  getAuth,
+  createUserWithEmailAndPassword,
+  signInWithEmailAndPassword,
+} from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import "./firebase-config";
 
 function Login() {
   const [email, setEmail] = useState("");
   const [pass, setPass] = useState("");
+  const navigate = useNavigate();
+  const authentication = getAuth();
+
   const emailHandler = (e) => {
     setEmail(e.target.value);
   };
@@ -13,8 +22,19 @@ function Login() {
     setPass(e.target.value);
   };
   const loginHandler = (e) => {
-    console.log(email);
-    console.log(pass);
+    signInWithEmailAndPassword(authentication, email, pass)
+      .then((response) => {
+        if (response) {
+          navigate("/");
+        }
+      })
+      .catch((error) => alert(error.message));
+    e.preventDefault();
+  };
+  const signUpHandler = (e) => {
+    createUserWithEmailAndPassword(authentication, email, pass)
+      .then((response) => console.log(response))
+      .catch((error) => alert(error.message));
     e.preventDefault();
   };
   return (
@@ -39,9 +59,7 @@ function Login() {
         <input type="submit" value="Sign In" />
       </form>
       <h2>New User?</h2>
-      <Link to="/Signup">
-        <h2>Click Here to Register</h2>
-      </Link>
+      <button onClick={signUpHandler}>Create Account</button>
     </div>
   );
 }
