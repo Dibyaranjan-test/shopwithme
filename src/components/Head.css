@@ -1,0 +1,40 @@
+.head_container {
+  display: flex;
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  justify-content: space-evenly;
+  background-color: #02172d;
+  top: 0;
+}
+.head_logo {
+  margin-left: 0;
+}
+.search_text {
+  height: 20px;
+  width: 50vw;
+  margin-top: 10px;
+  margin-left: 15px;
+}
+.search_icon {
+  margin-top: 10px;
+  color: aliceblue;
+}
+.head_options {
+  display: flex;
+  color: white;
+}
+.head_option {
+  padding: 10px;
+  font-size: 15px;
+}
+.first_line {
+  font-weight: 200;
+}
+.second_line {
+  font-weight: 700;
+  color: white;
+}
+.cart_icon {
+  color: white;
+}

@@ -1,0 +1,10 @@
+.login_container {
+  -webkit--mask-image: url("../images/shopmelogo.png");
+  -moz--mask-image: url("../images/shopmelogo.png");
+  mask-image: url("../images/shopmelogo.png");
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, white, yellow, red);
+  margin: 10vh 33vw 0px 33vw;
+}

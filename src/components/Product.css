@@ -1,0 +1,15 @@
+.product {
+  padding: 30px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: aliceblue;
+  padding: 15px;
+  margin: 10px;
+}
+.productdescription {
+  padding: 15px;
+}
+.productimage {
+  padding: 15px;
+}
