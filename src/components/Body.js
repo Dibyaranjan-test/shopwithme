@@ -20,17 +20,17 @@ function Body() {
         </div>
       </div>
       <div className="first_line_items">
-        <Product src={asp} desc="demo description" rating="3.5" pri="100" />
-        <Product src={java} desc="demo description" rating="4" pri="100" />
-        <Product src={js} desc="demo description" rating="4.5" pri="100" />
-        <Product src={js} desc="demo description" rating="4" pri="100" />
+        <Product src={asp} desc="Asp.net" rating="3.5" pri="100" />
+        <Product src={java} desc="java" rating="4" pri="100" />
+        <Product src={js} desc="javascript" rating="4.5" pri="100" />
+        <Product src={js} desc="javascript" rating="4" pri="100" />
       </div>
       <div className="second_line_items">
-        <Product src={python} desc="demo description" rating="5" pri="100" />
-        <Product src={python} desc="demo description" rating="5" pri="100" />
+        <Product src={python} desc="python" rating="5" pri="100" />
+        <Product src={python} desc="python" rating="5" pri="100" />
       </div>
       <div className="third_line_items">
-        <Product src={ruby} desc="demo description" rating="2" pri="100" />
+        <Product src={ruby} desc="ruby" rating="2" pri="100" />
       </div>
     </div>
   );

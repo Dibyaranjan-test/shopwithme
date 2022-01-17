@@ -9,6 +9,8 @@
 }
 .head_logo {
   margin-left: 0;
+  height: 50px;
+  width: 100%;
 }
 .search_text {
   height: 20px;
@@ -37,4 +39,12 @@
 }
 .cart_icon {
   color: white;
+}
+.cart {
+  display: flex;
+  flex-direction: row;
+}
+.cart_count {
+  margin-top: -5px;
+  margin-left: 10px;
 }

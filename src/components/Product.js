@@ -1,10 +1,16 @@
 import React from "react";
 import "./Product.css";
 import { Rating } from "@mui/material";
-
+import { useSelector, useDispatch } from "react-redux";
 function Product(props) {
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.basket);
   const addCartHandler = () => {
-    console.log("add to cart button clicked");
+    dispatch({
+      type: "add",
+      value: [props.src, props.desc, props.rating, props.pri],
+    });
+    console.log(products);
   };
   return (
     <div className="product">

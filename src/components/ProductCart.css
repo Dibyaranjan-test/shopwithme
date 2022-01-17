@@ -1,0 +1,16 @@
+.cart_items {
+  display: flex;
+  flex-direction: row;
+  height: 30vh;
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.item_description {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.quantity {
+  display: flex;
+  flex-direction: row;
+}
